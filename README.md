@@ -41,7 +41,7 @@ Steps with deploy-helper:
 The default configuration file `deploy-helper.json` needs to be in your working directory.\
 Example config:
 
-```json
+```json5
 {
   "destinations": [
     {
