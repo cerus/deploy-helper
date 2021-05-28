@@ -1,3 +1,5 @@
+![GitHub](https://img.shields.io/github/license/cerus/deploy-helper) ![Codacy branch grade](https://img.shields.io/codacy/grade/0d786807a3104bce869089c34c922945/master) [![GitHub issues](https://img.shields.io/github/issues/cerus/deploy-helper)](https://github.com/cerus/deploy-helper/issues) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cerus/deploy-helper)](https://github.com/cerus/deploy-helper/releases/latest) ![GitHub Repo stars](https://img.shields.io/github/stars/cerus/deploy-helper) [![GitHub Sponsors](https://img.shields.io/github/sponsors/cerus)](https://github.com/sponsors/cerus)
+
 # deploy-helper
 
 deploy-helper is a small tool for artifact deployment.
