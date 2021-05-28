@@ -139,4 +139,4 @@ Running deploy-helper with another config:\
 `deploy -c ~/my-deploy-config.json`
 
 Running deploy-helper with specified destinations:\
-`deploy -c service1,service4,service5`
+`deploy -d service1,service4,service5`
