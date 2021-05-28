@@ -43,6 +43,7 @@ Example config:
 
 ```json5
 {
+  // Required
   "destinations": [
     {
       // Name of the destination
@@ -63,6 +64,7 @@ Example config:
       "order": "SSH_COMMANDS"
     }
   ],
+  // Required
   "artifact": {
     // Directory that contains the artifact
     "directory": "./target",
@@ -73,10 +75,12 @@ Example config:
     // LAST_MODIFIED_DESC (newest file first)
     "sort": "LAST_MODIFIED_DESC"
   },
+  // Optional
   "commands": [
     // Can be either a string or an array of strings
     "scp {ARTIFACT_PATH} {SSH_USER}@{DEST_ADDRESS}:{DEST_PATH}{ARTIFACT_NAME}"
   ],
+  // Optional
   "ssh": {
     // If port is > 0, the ssh command will be USER@HOST:PORT
     // If the port is <= 0, the ssh command will be USER@HOST
