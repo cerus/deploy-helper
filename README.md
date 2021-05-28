@@ -4,6 +4,8 @@
 
 deploy-helper is a small tool for artifact deployment.
 
+<img src="https://i.imgur.com/qumITZf.png" width="85%" height="85%">
+
 ## Table of contents
 
 - [Requirements](#requirements)
