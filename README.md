@@ -2,6 +2,18 @@
 
 deploy-helper is a small tool for artifact deployment.
 
+## Table of contents
+
+- [Requirements](#requirements)
+- [Purpose](#purpose)
+- [Drawbacks](#drawbacks)
+- [Features](#features)
+- [Configuration](#configuration)
+- [Placeholders / Variables](#placeholders--variables)
+- [Arguments](#arguments)
+- [How to run (examples)](#how-to-run-examples)
+- [Contributing](#contributing)
+
 ## Requirements
 
 - **Java 15!**
@@ -18,7 +30,7 @@ Steps without deploy-helper:
 1. Compile
 2. Open file explorer
 3. Delete old artifact from server
-4. Drag and drop new artifact to server
+4. Drag and drop the new artifact to server
 
 Steps with deploy-helper:
 
@@ -140,3 +152,7 @@ Running deploy-helper with another config:\
 
 Running deploy-helper with specified destinations:\
 `deploy -d service1,service4,service5`
+
+## Contributing
+
+Please follow the [contribution guidelines](CONTRIBUTING.md)
