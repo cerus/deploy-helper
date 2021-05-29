@@ -1,10 +1,10 @@
-package de.cerus.deployhelper.gson;
+package dev.cerus.deployhelper.gson;
 
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
-import de.cerus.deployhelper.configuration.Config;
+import dev.cerus.deployhelper.configuration.Config;
 import java.io.IOException;
 
 public class DestinationAdapter extends TypeAdapter<Config.Destination> {

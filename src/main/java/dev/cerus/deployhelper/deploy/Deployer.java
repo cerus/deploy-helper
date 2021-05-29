@@ -1,8 +1,8 @@
-package de.cerus.deployhelper.deploy;
+package dev.cerus.deployhelper.deploy;
 
-import de.cerus.deployhelper.Launcher;
-import de.cerus.deployhelper.configuration.Config;
-import de.cerus.deployhelper.util.TriFunction;
+import dev.cerus.deployhelper.Launcher;
+import dev.cerus.deployhelper.configuration.Config;
+import dev.cerus.deployhelper.util.TriFunction;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;

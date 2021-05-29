@@ -1,17 +1,17 @@
-package de.cerus.deployhelper;
+package dev.cerus.deployhelper;
 
 import com.google.devtools.common.options.Option;
 import com.google.devtools.common.options.OptionsBase;
 import com.google.devtools.common.options.OptionsParser;
 import com.google.gson.GsonBuilder;
 import com.google.gson.LongSerializationPolicy;
-import de.cerus.deployhelper.configuration.Config;
-import de.cerus.deployhelper.deploy.Deployer;
-import de.cerus.deployhelper.gson.ArtifactSectionAdapter;
-import de.cerus.deployhelper.gson.CommandsSectionAdapter;
-import de.cerus.deployhelper.gson.ConfigAdapter;
-import de.cerus.deployhelper.gson.DestinationAdapter;
-import de.cerus.deployhelper.gson.SSHSectionAdapter;
+import dev.cerus.deployhelper.configuration.Config;
+import dev.cerus.deployhelper.deploy.Deployer;
+import dev.cerus.deployhelper.gson.ArtifactSectionAdapter;
+import dev.cerus.deployhelper.gson.CommandsSectionAdapter;
+import dev.cerus.deployhelper.gson.ConfigAdapter;
+import dev.cerus.deployhelper.gson.DestinationAdapter;
+import dev.cerus.deployhelper.gson.SSHSectionAdapter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

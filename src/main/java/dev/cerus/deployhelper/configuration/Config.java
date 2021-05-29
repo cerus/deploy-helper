@@ -1,4 +1,4 @@
-package de.cerus.deployhelper.configuration;
+package dev.cerus.deployhelper.configuration;
 
 import java.util.List;
 

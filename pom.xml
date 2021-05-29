@@ -4,9 +4,36 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.cerus</groupId>
+    <groupId>dev.cerus</groupId>
     <artifactId>deploy-helper</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>A simple tool for artifact deployment</description>
+    <url>https://github.com/cerus/deploy-helper</url>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License v3.0</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.en.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Maximilian Dorn</name>
+            <email>m.dorn.2003@web.de</email>
+            <organization>PypeWare GmbH</organization>
+            <organizationUrl>https://github.com/pypeware</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/cerus/deploy-helper.git</connection>
+        <developerConnection>scm:git:ssh://github.com:cerus/deploy-helper.git</developerConnection>
+        <url>http://github.com/cerus/deploy-helper/tree/master</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
@@ -50,7 +77,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>de.cerus.deployhelper.Launcher</mainClass>
+                            <mainClass>dev.cerus.deployhelper.Launcher</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

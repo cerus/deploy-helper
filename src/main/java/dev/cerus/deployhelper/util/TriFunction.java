@@ -1,4 +1,4 @@
-package de.cerus.deployhelper.util;
+package dev.cerus.deployhelper.util;
 
 public interface TriFunction<A, B, C, R> {
 
