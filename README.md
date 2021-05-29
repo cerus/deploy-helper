@@ -15,6 +15,7 @@ deploy-helper is a small tool for artifact deployment.
 - [Configuration](#configuration)
 - [Placeholders / Variables](#placeholders--variables)
 - [Arguments](#arguments)
+- [Installation](#installation)
 - [How to run (examples)](#how-to-run-examples)
 - [Contributing](#contributing)
 
@@ -142,6 +143,19 @@ There can only be one artifact.
 | --config | -c | Override the config location |
 | --verbose | -v | If enabled the process output will be redirected to stdout & stderr |
 | --destination | -d | Override the destinations (comma seperated list) |
+
+## Installation
+
+Installing deploy-helper is as easy as downloading the Jar (in theory). However, you should probably keep the Jar at some sort of central location.
+
+This is how I 'installed' deploy-helper on my Linux machine:
+
+1. `sudo mkdir /opt/deploy-helper`
+2. `sudo chown max:max /opt/deploy-helper`
+3. `mv ~/Downloads/deploy-helper-*.jar /opt/deploy-helper`
+4. `echo "alias deploy='java --enable-preview -jar /opt/deploy-helper/deploy-helper-VERSION.jar'" >> ~/.zshrc`
+
+Then simply reopen your terminal (or `source ~/.zshrc`) and you're done!
 
 ## How to run (examples)
 
