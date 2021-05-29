@@ -5,7 +5,7 @@ guidelines, your contribution might be rejected.
 
 1. Make sure to create an issue describing what you would like to do
     - Please wait for a maintainer to approve the proposed changes.
-2. Make sure to work in a separate branch
+2. Make sure to work in a fork and in a separate branch
     - **Create your branch from the `develop` branch**
     - For features the branch is usually called `feature/my-cool-feature` or `feature-my-cool-feature`.
     - For bugfixes the branch is usually called `fix/my-cool-feature` or `fix-my-cool-feature`.
