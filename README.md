@@ -1,10 +1,17 @@
-![GitHub](https://img.shields.io/github/license/cerus/deploy-helper) ![Codacy branch grade](https://img.shields.io/codacy/grade/0d786807a3104bce869089c34c922945/master) [![GitHub issues](https://img.shields.io/github/issues/cerus/deploy-helper)](https://github.com/cerus/deploy-helper/issues) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cerus/deploy-helper)](https://github.com/cerus/deploy-helper/releases/latest) ![GitHub Repo stars](https://img.shields.io/github/stars/cerus/deploy-helper) [![GitHub Sponsors](https://img.shields.io/github/sponsors/cerus)](https://github.com/sponsors/cerus)
+<br>
+<h2 align="center">deploy-helper</h3>
 
-# deploy-helper
-
-deploy-helper is a small tool for artifact deployment.
-
-<img src="https://i.imgur.com/qumITZf.png" width="85%" height="85%">
+<p align="center">
+    deploy-helper is a small tool for artifact deployment targetted at software developers.
+</p>
+<p align="center">
+   <a href="https://github.com/cerus/deploy-helper" align="center">
+       <img align="center" width="90%" height="90%" src="https://i.imgur.com/qumITZf.png"></img>
+   </a>
+   
+    
+   <p align="center"><img src="https://img.shields.io/github/license/cerus/deploy-helper" alt="GitHub"> <img src="https://img.shields.io/codacy/grade/0d786807a3104bce869089c34c922945/master" alt="Codacy branch grade"> <a href="https://github.com/cerus/deploy-helper/issues"><img src="https://img.shields.io/github/issues/cerus/deploy-helper" alt="GitHub issues"></a> <a href="https://github.com/cerus/deploy-helper/releases/latest"><img src="https://img.shields.io/github/v/release/cerus/deploy-helper" alt="GitHub release (latest by date)"></a> <img src="https://img.shields.io/github/stars/cerus/deploy-helper" alt="GitHub Repo stars"> <a href="https://github.com/sponsors/cerus"><img src="https://img.shields.io/github/sponsors/cerus" alt="GitHub Sponsors"></a></p>
+</p>
 
 ## Table of contents
 
@@ -17,6 +24,7 @@ deploy-helper is a small tool for artifact deployment.
 - [Arguments](#arguments)
 - [Installation](#installation)
 - [How to run (examples)](#how-to-run-examples)
+- [Building from source](#building-from-source)
 - [Contributing](#contributing)
 
 ## Requirements
@@ -123,8 +131,9 @@ This example config does the following:
 3. Exit ssh session
 4. Run `scp` command to copy new artifact to server
 
-Note:\
-There can only be one artifact.
+You should also add `deploy-helper.json` to your `.gitignore` file.
+
+> **Note:** There can only be one artifact.
 
 ## Placeholders / Variables
 
@@ -146,9 +155,9 @@ There can only be one artifact.
 
 ## Installation
 
-Installing deploy-helper is as easy as downloading the Jar (in theory). However, you should probably keep the Jar at some sort of central location.
+Installing deploy-helper is as easy as downloading the Jar from the latest release (in theory). However, you should probably keep the Jar at some sort of central location.
 
-This is how I 'installed' deploy-helper on my Linux machine:
+This is how I 'installed' deploy-helper on my Linux machine with Zsh:
 
 1. `sudo mkdir /opt/deploy-helper`
 2. `sudo chown max:max /opt/deploy-helper`
@@ -170,6 +179,21 @@ Running deploy-helper with another config:\
 
 Running deploy-helper with specified destinations:\
 `deploy -d service1,service4,service5`
+
+## Building from source
+
+**Prerequisites:**
+- Java 15
+- Maven
+- Git
+- A terminal
+
+**Steps:**
+1. Open your terminal
+2. Clone the repository `git clone https://github.com/cerus/deploy-helper.git`
+3. Go into the new folder `cd deploy-helper`
+4. Run Maven `mvn clean package`
+5. Get your fresh Jar from the target directory
 
 ## Contributing
 
