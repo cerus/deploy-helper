@@ -3,16 +3,12 @@ package dev.cerus.deployhelper.deploy;
 import dev.cerus.deployhelper.Launcher;
 import dev.cerus.deployhelper.configuration.Config;
 import dev.cerus.deployhelper.util.TriFunction;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Deployer {
@@ -46,7 +42,7 @@ public class Deployer {
         final File artifact = this.findArtifact();
 
         // Check arguments
-        if (this.options.destination != null && this.options.destination.length() > 0) {
+        if (!"".equals(this.options.destination)) {
             // Loop through the specified destinations and run deploy tasks
             for (final String destName : this.options.destination.split(",")) {
                 final Config.Destination destination = destinationMap.get(destName);
@@ -187,7 +183,6 @@ public class Deployer {
      * @param command     The command array
      * @param destination The destination
      * @param artifact    The artifact to deploy
-     *
      * @return A command array with replaced variables
      */
     private String[] prepareCommand(final String[] command, final Config.Destination destination, final File artifact) {
