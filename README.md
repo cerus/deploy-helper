@@ -183,7 +183,7 @@ Running deploy-helper with specified destinations:\
 ## Building from source
 
 **Prerequisites:**
-- Java 15
+- Java 17
 - Maven
 - Git
 - A terminal
@@ -192,7 +192,7 @@ Running deploy-helper with specified destinations:\
 1. Open your terminal
 2. Clone the repository `git clone https://github.com/cerus/deploy-helper.git`
 3. Go into the new folder `cd deploy-helper`
-4. Run Maven `mvn clean package`
+4. Run Maven `./mvnw clean package`
 5. Get your fresh Jar from the target directory
 
 ## Contributing
